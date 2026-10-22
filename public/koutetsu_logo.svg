@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" fill="#FFFFFF"/>
+  <defs>
+    <pattern id="hatch" width="8" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="8" y2="3" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <g>
+    <!-- Guidelines -->
+    <g stroke="#94a3b8" stroke-width="0.75" opacity="0.65" fill="none">
+      <line x1="256" y1="30" x2="256" y2="480"/>
+      <line x1="190" y1="104" x2="322" y2="104"/>
+      <line x1="172" y1="148" x2="340" y2="148"/>
+      <line x1="172" y1="148" x2="172" y2="290"/>
+      <line x1="340" y1="148" x2="340" y2="290"/>
+      <line x1="172" y1="148" x2="256" y2="460"/>
+      <line x1="340" y1="148" x2="256" y2="460"/>
+    </g>
+    <!-- Shield -->
+    <path d="M 172 148 L 340 148 L 340 270 C 340 340 290 410 256 460 C 222 410 172 340 172 270 Z"
+          fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M 184 158 L 328 158 L 328 266 C 328 330 284 398 256 442 C 228 398 184 330 184 266 Z"
+          fill="none" stroke="#1e293b" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M 256 158 L 328 158 L 328 266 C 328 330 284 398 256 442 Z"
+          fill="url(#hatch)" opacity="0.85"/>
+    <!-- Sword -->
+    <path d="M 242 135 L 242 385 L 256 430 L 270 385 L 270 135 Z"
+          fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="256" y1="135" x2="256" y2="395" stroke="#0f172a" stroke-width="1.4"/>
+    <path d="M 192 130 C 215 125 240 106 256 104 C 272 106 297 125 320 130 L 326 120 C 300 112 280 96 256 94 C 232 96 212 112 186 120 Z"
+          fill="#FFFFFF" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="256,96 264,106 256,116 248,106" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <rect x="250" y="48" width="12" height="46" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <polygon points="256,34 263,42 256,48 249,42" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <!-- Dragon -->
+    <path d="M 292 280 C 310 270 315 250 305 240 C 290 225 270 230 250 215 C 230 200 215 170 195 185 C 175 200 176 230 195 250 C 215 270 235 285 260 298 C 275 305 295 300 292 280 Z"
+          fill="#1e293b" stroke="#0f172a" stroke-width="1.6"/>
+    <text x="256" y="240" font-family="'Courier New', monospace, serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="middle">?</text>
+    <!-- Wheat -->
+    <path d="M 188 385 C 158 350 126 300 102 248" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 324 385 C 354 350 386 300 410 248" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Pure White Background as in original artwork -->
+  <rect width="512" height="512" fill="#FFFFFF"/>
+  <defs>
+    <!-- Hatching pattern for the shield shadow -->
+    <pattern id="hatch" width="8" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="8" y2="3" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+    <!-- Filter for subtle hand-drawn texture -->
+    <filter id="inkRough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#inkRough)">
+    <!-- 1. Geometric Guide & Construction Lines -->
+    <g stroke="#94a3b8" stroke-width="0.75" opacity="0.65" fill="none">
+      <line x1="256" y1="30" x2="256" y2="480"/>
+      <line x1="190" y1="104" x2="322" y2="104"/>
+      <line x1="172" y1="148" x2="340" y2="148"/>
+      <line x1="172" y1="148" x2="172" y2="290"/>
+      <line x1="340" y1="148" x2="340" y2="290"/>
+      <line x1="172" y1="148" x2="256" y2="460"/>
+      <line x1="340" y1="148" x2="256" y2="460"/>
+      <line x1="210" y1="148" x2="256" y2="440"/>
+      <line x1="302" y1="148" x2="256" y2="440"/>
+    </g>
+    <!-- 2. The Medieval Shield -->
+    <path d="M 172 148 L 340 148 L 340 270 C 340 340 290 410 256 460 C 222 410 172 340 172 270 Z"
+          fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M 184 158 L 328 158 L 328 266 C 328 330 284 398 256 442 C 228 398 184 330 184 266 Z"
+          fill="none" stroke="#1e293b" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M 256 158 L 328 158 L 328 266 C 328 330 284 398 256 442 Z"
+          fill="url(#hatch)" opacity="0.85"/>
+    <!-- 3. The Vertical Medieval Sword -->
+    <path d="M 242 135 L 242 385 L 256 430 L 270 385 L 270 135 Z"
+          fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="256" y1="135" x2="256" y2="395" stroke="#0f172a" stroke-width="1.4"/>
+    <line x1="242" y1="385" x2="256" y2="395" stroke="#0f172a" stroke-width="1.2"/>
+    <line x1="270" y1="385" x2="256" y2="395" stroke="#0f172a" stroke-width="1.2"/>
+    <line x1="256" y1="395" x2="256" y2="430" stroke="#0f172a" stroke-width="1.5"/>
+    <path d="M 242 385 L 256 408 L 270 385" fill="none" stroke="#334155" stroke-width="1"/>
+    <!-- Crossguard -->
+    <path d="M 192 130 C 215 125 240 106 256 104 C 272 106 297 125 320 130 L 326 120 C 300 112 280 96 256 94 C 232 96 212 112 186 120 Z"
+          fill="#FFFFFF" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 192 130 L 256 135 L 320 130" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+    <polygon points="256,96 264,106 256,116 248,106" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="248" y1="106" x2="264" y2="106" stroke="#0f172a" stroke-width="1"/>
+    <line x1="256" y1="96" x2="256" y2="116" stroke="#0f172a" stroke-width="1"/>
+    <!-- Handle -->
+    <rect x="250" y="48" width="12" height="46" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <polygon points="256,34 263,42 256,48 249,42" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.8"/>
+    <!-- 4. The Koutetsu Dragon-Fish -->
+    <g id="dragon-body">
+      <path d="M 292 280 C 310 270 315 250 305 240 C 290 225 270 230 250 215 C 230 200 215 170 195 185 C 175 200 176 230 195 250 C 215 270 235 285 260 298 C 275 305 295 300 292 280 Z"
+            fill="#1e293b" stroke="#0f172a" stroke-width="1.6"/>
+      <path d="M 305 245 C 315 240 325 242 332 250" fill="none" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M 302 250 C 312 250 322 256 328 266" fill="none" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M 195 185 C 185 170 190 160 205 165 C 192 155 202 145 212 152 C 210 140 220 142 225 152 C 230 140 238 144 240 155"
+            fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/>
+      <text x="256" y="240" font-family="'Courier New', monospace, serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="middle">?</text>
+    </g>
+    <!-- 5. Laurel / Wheat Sprigs -->
+    <g id="left-wheat">
+      <path d="M 188 385 C 158 350 126 300 102 248" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+      <polygon points="188,385 174,382 170,366 182,374" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.6"/>
+      <polygon points="176,365 160,358 156,342 168,350" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.6"/>
+      <polygon points="160,340 144,332 140,316 152,324" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.6"/>
+    </g>
+    <g id="right-wheat">
+      <path d="M 324 385 C 354 350 386 300 410 248" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+      <polygon points="324,385 338,382 342,366 330,374" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.6"/>
+      <polygon points="336,365 352,358 356,342 344,350" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.6"/>
+      <polygon points="352,340 368,332 372,316 360,324" fill="#FFFFFF" stroke="#0f172a" stroke-width="1.6"/>
+    </g>
+  </g>
+</svg>

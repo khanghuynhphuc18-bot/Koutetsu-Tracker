@@ -1,0 +1,6 @@
+{
+  "name": "Koutetsu Ryu Tracker",
+  "description": "Native habit tracking app for iOS & Android with offline data synchronization, customizable appearance, and authentic Koutetsu Ryu crest.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
